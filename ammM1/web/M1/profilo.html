@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Profilo</title>
+    <title>Profilo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+        <meta name="author" content="Silvio Casula">
+        <meta name="keywords" content="nerdbook">
     <body>
-        <div>TODO write content</div>
+        <div id="sommario1">
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+         </div>
+        
+        <div id="inserimenti">
+            <form>
+                <label for="name">Nome</label>
+                <input id="name" type="text"><br><br>
+                <label for="surname">Cognome</label>
+                <input id="surname" type="text"><br><br>
+                <label for="url">URL Immagine del Profilo</label>
+                <input id="url" type="url"><br><br>
+                <label for="frase">Frase di Presentazione</label><br>
+                <textarea id="frase" rows="4" cols="50"></textarea><br><br>
+                <label for="data">Data di Nascita</label>
+                <input id="data" type="date"><br><br>
+                <label for="pass">Password</label>
+                <input id="pass" type="password"><br><br>
+                <label for="c_pass">Conferma Password</label>
+                <input id="c_pass" type="password"><br><br>
+                
+            </form>
+        </div>
     </body>
 </html>
