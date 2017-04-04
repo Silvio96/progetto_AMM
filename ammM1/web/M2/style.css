@@ -66,7 +66,7 @@ div#sommario
 { 
     float: left;
     font-size: 30px;
-    border-top: 8px solid black;
+    border-top:none;
     border-right: 8px solid black;
    border-bottom: 8px solid black;
    padding: 15px;
@@ -85,11 +85,10 @@ h2#titolo
 
 div#sommario_profilo
 {
-    width: 25%;
+    width: 30%;
     float: left;
     font-size: 30px;
-    border-radius: 15px;
-    border-top: 5px solid black;
+    border-top: 0px;
     border-right: 5px solid black;
    border-bottom: 5px solid black;
    padding-right: 0px;
@@ -98,32 +97,52 @@ div#sommario_profilo
    padding-left: 0px;
    display: inline-block;
    margin-right: 20px;
+    border-collapse: collapse;
 
+}
+.people
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a.people:hover{
+    color:white;
 }
 
 div#inserimenti_profilo
 {
+  margin-top: 20px;
   float:right;
-  width: 50%;
-  
+  width: 33%;
+  margin-right: 10%;
+}
+
+.dati_personali
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    width: 75%;
 }
 
 div#head_profilo
 {width: 100%;
  float: left;
  height: 25%;
- padding-bottom: 10px;
+ padding-bottom: 0px;
  border-bottom: solid 5px black;
- border-collapse: collapse;
- margin-bottom: 20px;
 }
 
 div#img_profilo
 {
+    margin-top: 20px;
     float:left;
     padding:0px;
-    height: 150px;
-    width: 160px;
+    height: 200px;
+    width: 220px;
 }
 
 h2#titolo_profilo
@@ -134,6 +153,7 @@ h2#titolo_profilo
     margin:0px;
     padding: 0px;
     display: inline-block;
+    float:left;
 }
    
 a#button_bacheca:link, a#button_bacheca:visited {
@@ -145,24 +165,48 @@ a#button_bacheca:link, a#button_bacheca:visited {
     text-decoration: none;
     display: inline-block;
     margin: 0px;
-}
+        float:left;
+
+    border-left: 2px solid black;
+    border-right: 2px solid black;}
+
 a#button_bacheca:hover, a#button_bacheca:active {
     background-color:#03CE11;
 }
+
+
+a#button_aggiorna:link, a#button_aggiorna:visited {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    padding: 14px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    width: 70%;
+}
+
+a#button_aggiorna:hover, a#button_aggiorna:active {
+    background-color:red;}
+
 
 a#button_act_profilo:link {
     background-color: #ADFF2F;
     color: white;
     font-size: 25px;
+    float:left;
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
     margin: 0px;
-   
+    border-left: 2px solid black;   
 }
 a#button_act_profilo:hover, a#button_bacheca:active, a#button_act_profilo:visited {
     background-color:#03CE11;
         color: white;
+            border-left: 2px solid black;   
+
 
 }
