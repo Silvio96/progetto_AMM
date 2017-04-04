@@ -11,13 +11,20 @@ and open the template in the editor.
 body 
 {
   background-color: #ADFF2F;
-  
   font-family: "Calibri";
 }
 
 a:link {
     color: black;
 }
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 input{
     border: 2px solid black;
@@ -40,10 +47,19 @@ div#form{
     margin-left: 33%;
 }
 
-ul {
-    list-style-type: circle;
-    margin: 0;
-    padding: 0;
+a#pulsante:link, a#pulsante:visited {
+    background-color: #f44336;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a#pulsante:hover, a#pulsante:active {
+    background-color: red;
 }
 
 div#sommario
@@ -63,17 +79,90 @@ h2#titolo
     text-align: center; 
 }
 
-   a#pulsante:link, a#pulsante:visited {
-    background-color: #f44336;
+
+
+
+
+div#sommario_profilo
+{
+    width: 25%;
+    float: left;
+    font-size: 30px;
+    border-radius: 15px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+   border-bottom: 5px solid black;
+   padding-right: 0px;
+   padding-top: 10px;
+   padding-bottom: 10px; 
+   padding-left: 0px;
+   display: inline-block;
+   margin-right: 20px;
+
+}
+
+div#inserimenti_profilo
+{
+  float:right;
+  width: 50%;
+  
+}
+
+div#head_profilo
+{width: 100%;
+ float: left;
+ height: 25%;
+ padding-bottom: 10px;
+ border-bottom: solid 5px black;
+ border-collapse: collapse;
+ margin-bottom: 20px;
+}
+
+div#img_profilo
+{
+    float:left;
+    padding:0px;
+    height: 150px;
+    width: 160px;
+}
+
+h2#titolo_profilo
+{
+    width: 30%;
+    font-size: 50px;
+    text-align: left; 
+    margin:0px;
+    padding: 0px;
+    display: inline-block;
+}
+   
+a#button_bacheca:link, a#button_bacheca:visited {
+    background-color: #ADFF2F;
     color: white;
     font-size: 25px;
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
+}
+a#button_bacheca:hover, a#button_bacheca:active {
+    background-color:#03CE11;
 }
 
-a#pulsante:hover, a#pulsante:active {
-    background-color: red;
+a#button_act_profilo:link {
+    background-color: #ADFF2F;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+   
+}
+a#button_act_profilo:hover, a#button_bacheca:active, a#button_act_profilo:visited {
+    background-color:#03CE11;
+        color: white;
+
 }
