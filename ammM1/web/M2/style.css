@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2017, 11.56.50
+    Author     : Silvio Casula
+*/
+
+body 
+{
+  background-color: #ADFF2F;
+  
+  font-family: "Calibri";
+}
+
+a:link {
+    color: black;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    width: 75%;
+    height: 35px;
+    font-size: 30px;
+    padding: 2px;
+    margin: 10px;
+}
+
+input:focus {
+    border: 3px solid red;
+}
+div#form{
+    width: 33%; 
+    border: 8px solid black;
+    padding: 10px;
+    margin-left: 33%;
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+
+div#sommario
+{ 
+    float: left;
+    font-size: 30px;
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+   border-bottom: 8px solid black;
+   padding: 15px;
+   padding-left: 0px;
+}
+
+h2#titolo
+{
+    font-size: 50px;
+    text-align: center; 
+}
+
+   a#pulsante:link, a#pulsante:visited {
+    background-color: #f44336;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a#pulsante:hover, a#pulsante:active {
+    background-color: red;
+}
