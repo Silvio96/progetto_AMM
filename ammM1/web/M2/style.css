@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : Silvio Casula
 */
 
+/* 
+CSS Generale
+*/
+
 body 
 {
   background-color: #ADFF2F;
@@ -17,14 +21,6 @@ body
 a:link {
     color: black;
 }
-
-ul {
-    list-style-type: circle;
-    margin: 0;
-    padding: 0;
-}
-
-
 
 input{
     border: 2px solid black;
@@ -40,38 +36,8 @@ input{
 input:focus {
     border: 3px solid red;
 }
-div#form{
-    width: 33%; 
-    border: 8px solid black;
-    padding: 10px;
-    margin-left: 33%;
-}
 
-a#pulsante:link, a#pulsante:visited {
-    background-color: #f44336;
-    color: white;
-    font-size: 25px;
-    padding: 14px 25px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-}
-
-a#pulsante:hover, a#pulsante:active {
-    background-color: red;
-}
-
-div#sommario
-{ 
-    float: left;
-    font-size: 30px;
-    border-top:none;
-    border-right: 8px solid black;
-   border-bottom: 8px solid black;
-   padding: 15px;
-   padding-left: 0px;
-}
+/* Pagina Login */
 
 h2#titolo
 {
@@ -79,83 +45,66 @@ h2#titolo
     text-align: center; 
 }
 
-
-
-
-
-div#sommario_profilo
-{
-    width: 30%;
-    float: left;
-    font-size: 30px;
-    border-top: 0px;
-    border-right: 5px solid black;
-   border-bottom: 5px solid black;
-   padding-right: 0px;
-   padding-top: 10px;
-   padding-bottom: 10px; 
-   padding-left: 0px;
-   display: inline-block;
-   margin-right: 20px;
-    border-collapse: collapse;
-
+div#form{
+    width: 33%; 
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 33%;
 }
-.people
-{
-    margin-bottom: 2px;
-    margin-right: 10px;
+
+/* Pulsante login */
+
+a#pulsante:link, a#pulsante:visited {
+    background-color: #f44336;
+    color: white;
+    font-size: 25px;
+    padding: 14px;
+    text-align: center; 
     text-decoration: none;
-    color: black;
-}
-
-a.people:hover{
-    color:white;
-}
-
-div#inserimenti_profilo
-{
-  margin-top: 20px;
-  float:right;
-  width: 33%;
-  margin-right: 10%;
-}
-
-.dati_personali
-{
-    font-size: 20px;
-    font-weight: bold;
+    display: inline-block;
     margin: 5px;
-    width: 75%;
 }
+a#pulsante:hover, a#pulsante:active {
+    background-color: red;
+}
+
+/* Pagina del Profilo */
 
 div#head_profilo
 {width: 100%;
  float: left;
  height: 25%;
  padding-bottom: 0px;
- border-bottom: solid 5px black;
+ border-bottom: solid 2px black;
 }
 
-div#img_profilo
+/* Titolo in alto a sinistra */
+
+div#title_profilo
 {
-    margin-top: 20px;
-    float:left;
-    padding:0px;
-    height: 200px;
-    width: 220px;
+   position: static;
+   float:left;
+   width: 25%;
+   min-width: max-content;
 }
 
 h2#titolo_profilo
 {
-    width: 30%;
     font-size: 50px;
-    text-align: left; 
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     display: inline-block;
     float:left;
+
 }
+/* Pulsanti del Menù superiore */
    
+div#profile_buttons
+{
+ display: inline-block;
+ height: 100%;
+}
+
 a#button_bacheca:link, a#button_bacheca:visited {
     background-color: #ADFF2F;
     color: white;
@@ -165,33 +114,18 @@ a#button_bacheca:link, a#button_bacheca:visited {
     text-decoration: none;
     display: inline-block;
     margin: 0px;
-        float:left;
-
+    float:left;
     border-left: 2px solid black;
-    border-right: 2px solid black;}
+    border-right: 2px solid black;
+}
 
-a#button_bacheca:hover, a#button_bacheca:active {
+a#button_bacheca:hover, a#button_bacheca:active 
+{
     background-color:#03CE11;
 }
 
-
-a#button_aggiorna:link, a#button_aggiorna:visited {
-    background-color: red;
-    color: white;
-    font-size: 25px;
-    padding: 14px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px;
-    width: 70%;
-}
-
-a#button_aggiorna:hover, a#button_aggiorna:active {
-    background-color:red;}
-
-
-a#button_act_profilo:link {
+a#button_act_profilo:link 
+{
     background-color: #ADFF2F;
     color: white;
     font-size: 25px;
@@ -203,10 +137,250 @@ a#button_act_profilo:link {
     margin: 0px;
     border-left: 2px solid black;   
 }
-a#button_act_profilo:hover, a#button_bacheca:active, a#button_act_profilo:visited {
+a#button_act_profilo:hover, a#button_bacheca:active, a#button_act_profilo:visited 
+{
     background-color:#03CE11;
-        color: white;
-            border-left: 2px solid black;   
+    color: white;
+    border-left: 2px solid black;   
+}
+
+/* Logout */
+
+div#logout
+{
+    float:right;
+    width:15%;
+    padding-right: 15px;
+}
+
+/* Aggiunta immagine tramite CSS prima del nome nella parte del logout */
+
+h4#nome_utente_logout::before {
+    content: url(imgs/tiny_profilo.jpg);
+    margin-right: 10px;   
+}
+
+/* Classe nome utente nel logout */
+
+.name_logout
+{
+    margin:0px;
+}
+
+/* Classe link logout */
+
+.link_logout
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a.link_logout:hover{
+    color:white;
+}
+
+/* Navbar di sinistra */
+
+div#navbar_left
+{
+    min-width: max-content;
+    width: 25%;
+    float: left;
+    font-size: 20px;
+    border-top: 0px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 0px;
+    display: inline-block;
+}
+
+input#search
+{
+    max-width: 50%;
+}
+/* Classe dei Sottotitoli delle categorie della Navbar (Persone, Gruppi..) */
+
+.sottotitolo
+{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Classe dei link dei Nomi degli Utenti nella Navbar */
+
+.people
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.people::before {
+    content: url(imgs/tiny_profilo.jpg);
+    margin-right: 10px;   
+}
+
+a.people:hover{
+    color:white;
+}
+
+/* Contenuto principale della pagina del profilo */
+
+div#content_profilo
+{
+    margin-top: 35px;
+    margin-left:35px;
+    margin-right: 10px;
+    float: left;
+    width: 50%;
+    padding: 5px;
+    display: inline-block;
+
+}
+
+/* Immagine del profilo */
+
+div#img_profilo
+{
+    margin-right: 30px;
+    float:left;
+    padding:0px;
+    height: 150px;
+    width: 160px;
+}
+
+/* Form di inserimento */
+
+div#inserimenti_profilo
+{
+  float:left;
+  width: 50%;  
+}
+
+/* Classe per gestire i testi dell'inserimento dei dati personali nei form del profilo */
 
 
+.dati_personali
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    min-width: 50px;
+}
+
+/* Pulsante aggiornamento dati del profilo */
+
+a#button_aggiorna:link, a#button_aggiorna:visited 
+{
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    width: 70%;
+}
+
+a#button_aggiorna:hover, a#button_aggiorna:active
+{
+    background-color:red;
+}
+
+
+/* Pagina della Bacheca */
+/* Pulsanti del Menù superiore */
+
+a#button_profilo:link, a#button_profilo:visited {
+    background-color: #ADFF2F;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    float:left;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-collapse: collapse;
+}
+
+a#button_profilo:hover, a#button_profilo:active 
+{
+    background-color:#03CE11;
+}
+
+a#button_act_bacheca:link 
+{
+    background-color: #ADFF2F;
+    color: white;
+    font-size: 25px;
+    float:left;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    border-right: 2px solid black; 
+}
+a#button_act_bacheca:hover, a#button_act_bacheca:active, a#button_act_bacheca:visited 
+{
+    background-color:#03CE11;
+    color: white;         
+    border-right: 2px solid black; 
+}
+
+/* Contenuto principale della Bacheca */
+
+div#content_bacheca
+{
+    float: left;
+    width: 50%;
+    margin: 20px;
+    margin-right: 5%;
+    padding: 5px;
+    min-width: max-content;
+}
+
+/* Classe del nome utente dei post */
+
+.nome_utente_post
+{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+    alignment-adjust: central;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+/* Classe per la gestione del contenitore del Post */
+
+.post
+{
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Classe per la gestione del contenuto del Post */
+
+.cont
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px
 }

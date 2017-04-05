@@ -8,29 +8,34 @@
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <body>
         <div id="head_profilo">
-            <h2 id="titolo_profilo">NerdBook</h2>
-        <a class="active" id="button_act_profilo" href="profilo.html">Profilo</a>
+        <div id="title_profilo">
+        <h2 id="titolo_profilo">NerdBook</h2>
+        </div>
+        <div id="profile_buttons">    
+        <a id="button_act_profilo" href="profilo.html">Profilo</a>
         <a id="button_bacheca" href="bacheca.html">Bacheca</a>
         </div>
+        <div id="logout">
+        <h4 class="name_logout" id="nome_utente_logout"><b>&nbsp;Silvio Casula</b></h4>
+        <a  class="link_logout" href="login.html">Logout</a><br>
+        </div>
+        </div>
         
-        <div id="sommario_profilo">
+        <div id="navbar_left">
             <form>  <input type="search" id="search" value="Cerca"> </form>
-            <h3>Persone</h3>
-            <img class="people" height="40" width="40" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
+            <p class="sottotitolo">Persone</p><br>
             <a class="people" href="profilo.html">Pinco Pallino</a><br>
-            <img class="people" height="40" width="40" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
             <a class="people" href="profilo.html">Riccardo Rossi</a><br>
-            <img class="people" height="40" width="40" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
-            <a class="people" href="profilo.html">Mario Bianchi</a>
-            <h3>Gruppi</h3>
-            <img class="people" height="40" width="40" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
+            <a class="people" href="profilo.html">Mario Bianchi</a><br>
+            <p class="sottotitolo">Gruppi</p><br>
             <a class="people" href="profilo.html">Motociclisti</a><br>
-            <img class="people" height="40" width="40" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
             <a class="people" href="profilo.html">Calcio</a><br>   
          </div>
         
+        <div id="content_profilo">
+        
         <div id="img_profilo">
-        <img height="200" width="220" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
+        <img height="150" width="160" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
         </div>
         
         <div id="inserimenti_profilo">
@@ -50,8 +55,8 @@
                 <label class="dati_personali" for="c_pass">Conferma Password</label><br>
                 <input class="dati_personali" id="c_pass" type="password"><br><br>
                 <a class="dati_personali" id="button_aggiorna" href="profilo.html">Aggiorna</a>
-
             </form>
+        </div>
         </div>
     </body>
 </html>
