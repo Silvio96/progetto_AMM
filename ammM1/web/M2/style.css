@@ -37,6 +37,25 @@ input:focus {
     border: 3px solid red;
 }
 
+/* Pagina Descrizione */
+
+div#login
+{
+  width: 100%;
+  text-align: right;
+}
+
+a.log
+{
+ text-decoration: none;
+ color: black;  
+ margin-right: 2%; 
+}
+
+a.log:hover
+{
+ color: white;
+}
 /* Pagina Login */
 
 h2#titolo
