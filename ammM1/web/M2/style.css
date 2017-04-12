@@ -69,6 +69,7 @@ div#form{
     border: 2px solid black;
     padding: 10px;
     margin-left: 33%;
+    text-align: center;
 }
 
 /* Pulsante login */
@@ -403,3 +404,8 @@ div#content_bacheca
     padding: 20px;
     margin-top: 15px
 }
+
+/*
+    Ho inserito tramite CSS le immagini incluse nella struttura del sito , come ad esempio le piccole icone dei gruppi e dei profili delle altre persone.
+    Mentre ho inserito tramite HTML l'immagine del profilo e le immagini dei post.
+*/ 
