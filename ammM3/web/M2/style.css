@@ -1,0 +1,411 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2017, 11.56.50
+    Author     : Silvio Casula
+*/
+
+/* 
+CSS Generale
+*/
+
+body 
+{
+  background-color: #01C13B;
+  font-family: "Calibri";
+}
+
+a:link {
+    color: black;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    width: 75%;
+    height: 35px;
+    font-size: 30px;
+    padding: 2px;
+    margin: 10px;
+}
+
+input:focus {
+    border: 3px solid red;
+}
+
+/* Pagina Descrizione */
+
+div#login
+{
+  width: 100%;
+  text-align: right;
+}
+
+a.log
+{
+ text-decoration: none;
+ color: black;  
+ margin-right: 2%; 
+}
+
+a.log:hover
+{
+ color: white;
+}
+/* Pagina Login */
+
+h2#titolo
+{
+    font-size: 50px;
+    text-align: center; 
+}
+
+div#form{
+    width: 33%; 
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 33%;
+    text-align: center;
+}
+
+/* Pulsante login */
+
+a#pulsante:link, a#pulsante:visited {
+    background-color: #f44336;
+    color: white;
+    font-size: 25px;
+    padding: 14px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+a#pulsante:hover, a#pulsante:active {
+    background-color: red;
+}
+
+/* Pagina del Profilo */
+
+div#head_profilo
+{width: 100%;
+ float: left;
+ height: 25%;
+ padding-bottom: 0px;
+ border-bottom: solid 2px black;
+}
+
+/* Titolo in alto a sinistra */
+
+div#title_profilo
+{
+   position: static;
+   float:left;
+   width: 25%;
+   min-width: max-content;
+}
+
+h2#titolo_profilo
+{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    float:left;
+
+}
+/* Pulsanti del Menù superiore */
+   
+div#profile_buttons
+{
+ display: inline-block;
+ height: 100%;
+}
+
+a#button_bacheca:link, a#button_bacheca:visited {
+    background-color: #01C13B;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    float:left;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+a#button_bacheca:hover, a#button_bacheca:active 
+{
+    background-color:#04FF50;
+}
+
+a#button_act_profilo:link 
+{
+    background-color: #04FF50;
+    color: white;
+    font-size: 25px;
+    float:left;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    border-left: 2px solid black;   
+}
+a#button_act_profilo:hover, a#button_bacheca:active, a#button_act_profilo:visited 
+{
+    background-color:#04FF50;
+    color: white;
+    border-left: 2px solid black;   
+}
+
+/* Logout */
+
+div#logout
+{
+    float:right;
+    width:15%;
+    padding-right: 15px;
+}
+
+/* Aggiunta immagine tramite CSS prima del nome nella parte del logout */
+
+h4#nome_utente_logout::before {
+    content: url(imgs/tiny_profilo.jpg);
+    margin-right: 10px;   
+}
+
+/* Classe nome utente nel logout */
+
+.name_logout
+{
+    margin:0px;
+}
+
+/* Classe link logout */
+
+.link_logout
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a.link_logout:hover{
+    color:white;
+}
+
+/* Navbar di sinistra */
+
+div#navbar_left
+{
+    min-width: max-content;
+    width: 25%;
+    float: left;
+    font-size: 20px;
+    border-top: 0px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 0px;
+    display: inline-block;
+}
+
+input#search
+{
+    max-width: 50%;
+}
+/* Classe dei Sottotitoli delle categorie della Navbar (Persone, Gruppi..) */
+
+.sottotitolo
+{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Classe dei link dei Nomi degli Utenti nella Navbar */
+
+.people
+{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.people::before {
+    content: url(imgs/tiny_profilo.jpg);
+    margin-right: 10px;   
+}
+
+a.people:hover{
+    color:white;
+}
+
+/* Contenuto principale della pagina del profilo */
+
+div#content_profilo
+{
+    margin-top: 35px;
+    margin-left:35px;
+    margin-right: 10px;
+    float: left;
+    width: 50%;
+    padding: 5px;
+    display: inline-block;
+
+}
+
+/* Immagine del profilo */
+
+div#img_profilo
+{
+    margin-right: 30px;
+    float:left;
+    padding:0px;
+    height: 150px;
+    width: 160px;
+}
+
+/* Form di inserimento */
+
+div#inserimenti_profilo
+{
+  float:left;
+  width: 50%;  
+}
+
+/* Classe per gestire i testi dell'inserimento dei dati personali nei form del profilo */
+
+
+.dati_personali
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    min-width: 50px;
+}
+
+/* Pulsante aggiornamento dati del profilo */
+
+a#button_aggiorna:link, a#button_aggiorna:visited 
+{
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    width: 70%;
+}
+
+a#button_aggiorna:hover, a#button_aggiorna:active
+{
+    background-color:red;
+}
+
+
+/* Pagina della Bacheca */
+/* Pulsanti del Menù superiore */
+
+a#button_profilo:link, a#button_profilo:visited {
+    background-color: #01C13B;
+    color: white;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    float:left;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-collapse: collapse;
+}
+
+a#button_profilo:hover, a#button_profilo:active 
+{
+    background-color: #04FF50;
+}
+
+a#button_act_bacheca:link 
+{
+    background-color: #04FF50;
+    color: white;
+    font-size: 25px;
+    float:left;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    border-right: 2px solid black; 
+}
+a#button_act_bacheca:hover, a#button_act_bacheca:active, a#button_act_bacheca:visited 
+{
+    background-color:#04FF50;
+    color: white;         
+    border-right: 2px solid black; 
+}
+
+/* Contenuto principale della Bacheca */
+
+div#content_bacheca
+{
+    float: left;
+    width: 50%;
+    margin: 20px;
+    margin-right: 5%;
+    padding: 5px;
+    min-width: max-content;
+}
+
+/* Classe del nome utente dei post */
+
+.nome_utente_post
+{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+    alignment-adjust: central;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+/* Classe per la gestione del contenitore del Post */
+
+.post
+{
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Classe per la gestione del contenuto del Post */
+
+.cont
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px
+}
+
+/*
+    Ho inserito tramite CSS le immagini incluse nella struttura del sito , come ad esempio le piccole icone dei gruppi e dei profili delle altre persone.
+    Mentre ho inserito tramite HTML l'immagine del profilo e le immagini dei post.
+*/ 

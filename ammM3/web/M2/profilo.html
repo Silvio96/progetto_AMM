@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Silvio Casula">
+        <meta name="keywords" content="nerdbook">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <body>
+        <div id="head_profilo">
+        <div id="title_profilo">
+        <h2 id="titolo_profilo">NerdBook</h2>
+        </div>
+        <div id="profile_buttons">    
+        <a id="button_act_profilo" href="profilo.html">Profilo</a>
+        <a id="button_bacheca" href="bacheca.html">Bacheca</a>
+        </div>
+        <div id="logout">
+        <h4 class="name_logout" id="nome_utente_logout"><b>&nbsp;Silvio Casula</b></h4>
+        <a  class="link_logout" href="login.html">Logout</a><br>
+        </div>
+        </div>
+        
+        <div id="navbar_left">
+            <form>  <input type="search" id="search" value="Cerca"> </form>
+            <p class="sottotitolo">Persone</p><br>
+            <a class="people" href="profilo.html">Pinco Pallino</a><br>
+            <a class="people" href="profilo.html">Riccardo Rossi</a><br>
+            <a class="people" href="profilo.html">Mario Bianchi</a><br>
+            <p class="sottotitolo">Gruppi</p><br>
+            <a class="people" href="profilo.html">Motociclisti</a><br>
+            <a class="people" href="profilo.html">Calcio</a><br>   
+         </div>
+        
+        <div id="content_profilo">
+        
+        <div id="img_profilo">
+        <img height="150" width="160" title="fotoProfilo" alt="Foto Profilo" src="imgs/profilo_empty.jpg">
+        </div>
+        
+        <div id="inserimenti_profilo">
+            <form>
+                <label class="dati_personali" for="name">Nome</label><br>
+                <input class="dati_personali" id="name" type="text"><br><br>
+                <label class="dati_personali" for="surname">Cognome</label><br>
+                <input class="dati_personali" id="surname" type="text"><br><br>
+                <label class="dati_personali" for="url">URL Immagine del Profilo</label><br>
+                <input class="dati_personali" id="url" type="url"><br><br>
+                <label class="dati_personali" for="frase">Frase di Presentazione</label><br>
+                <textarea class="dati_personali" id="frase" rows="4"></textarea><br><br>
+                <label class="dati_personali" for="data">Data di Nascita</label><br>
+                <input class="dati_personali" id="data" type="date"><br><br>
+                <label class="dati_personali" for="pass">Password</label><br>
+                <input class="dati_personali" id="pass" type="password"><br><br>
+                <label class="dati_personali" for="c_pass">Conferma Password</label><br>
+                <input class="dati_personali" id="c_pass" type="password"><br><br>
+                <a class="dati_personali" id="button_aggiorna" href="profilo.html">Aggiorna</a>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
